@@ -172,6 +172,7 @@ nav ul li a:hover, nav ul li a.active {
 
 /* Contact Info Cards */
 .contact-info {
+    background-color: var(--primary);
     padding-top: 3rem;
     padding-bottom: 5rem;
 }
@@ -388,7 +389,7 @@ nav ul li a:hover, nav ul li a.active {
 .social-media-section {
     text-align: center;
     padding: 5rem 0;
-    background-color: white;
+    background-color: var(--neutral-light);
 }
 
 .social-media-section h2 {
