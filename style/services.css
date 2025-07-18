@@ -767,7 +767,7 @@ nav ul li a:hover, nav ul li a.active {
 .btn-text {
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--neutral-light);
+    color: #007BFF;
 }
 
 /* Animations */
