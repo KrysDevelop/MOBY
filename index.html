@@ -2,28 +2,37 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#00B8C8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>MOBY - Inmobiliaria</title>
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="icon" type="image/x-icon" href="../images/icon.ico">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" type="image/x-icon" href="./images/icon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
     <!-- Header -->
     <header>
         <div class="logo">
-            <a href="../index.html"><img src="../images/LogoOG.jfif" alt="" style="height: 10%; width: 10%;"></a>
+            <a href="./index.html"><img src="./images/LogoOG.jfif" alt="MOBY Inmobiliaria" class="logo-img"></a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="/services/services.html">Servicios</a></li>
-                <li><a href="/properties/properties.html">Propiedades</a></li>
-                <li><a href="/contact/contact.html">Contacto</a></li>
-                <li><a href="/partners/partners.html">Socios</a></li>
+        <button class="mobile-menu-toggle" aria-label="Menú">
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+        </button>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="./index.html" class="active">Inicio</a></li>
+                <li><a href="./services/services.html">Servicios</a></li>
+                <li><a href="./properties/properties.html">Propiedades</a></li>
+                <li><a href="./contact/contact.html">Contacto</a></li>
+                <li><a href="./partners/partners.html">Socios</a></li>
             </ul>
         </nav>
     </header>
@@ -34,8 +43,8 @@
                 <h1>Redefiniendo<br>el mercado Inmobiliario</h1>
                 <p>Somos la inmobiliaria por excelencia en Guadalajara</p>
                 <div class="hero-buttons">
-                    <a href="/properties/properties.html" class="btn btn-primary">Nuestras Propiedades</a>
-                    <a href="/contact/contact.html" class="btn btn-secondary">Conócenos</a>
+                    <a href="./properties/properties.html" class="btn btn-primary">Nuestras Propiedades</a>
+                    <a href="./contact/contact.html" class="btn btn-secondary">Conócenos</a>
                 </div>
             </div>
         </section>
@@ -46,27 +55,27 @@
                 <p>Calificados como la Inmobiliaria más destacada de Guadalajara</p>
             </div>
             <div class="project-grid">
-                <a href="/properties/properties.html">
+                <a href="./properties/properties.html">
                 <div class="project-card">
-                    <div class="project-image" style="background-image: url('')"></div>
+                    <div class="project-image" style="background-image: url('./properties/propertieBodega/RentaBodega/bodega1.jpeg')"></div>
                     <div class="project-info">
                         <h3>Villas de Valentina</h3>
                         <p>Chapala</p>
                     </div>
                 </div>
                 </a>
-                <a href="/projects/proyectos.html">
+                <a href="./projects/proyectos.html">
                 <div class="project-card">
-                    <div class="project-image" style="background-image: url('/properties/propertieBodega/RentaBodega/bodega1.jpeg')"></div>
+                    <div class="project-image" style="background-image: url('./properties/propertieBodega/RentaBodega/bodega1.jpeg')"></div>
                     <div class="project-info">
                         <h3>Bodega</h3>
                         <p>Zapopan, Lomas del Bosque, San Rafael 1600</p>
                     </div>
                 </div>
                 </a>
-                <a href="/projects/proyectos.html">
+                <a href="./projects/proyectos.html">
                 <div class="project-card">
-                    <div class="project-image" style="background-image: url('')"></div>
+                    <div class="project-image" style="background-image: url('./properties/propertieBodega/RentaBodega/bodega1.jpeg')"></div>
                     <div class="project-info">
                         <h3>Departamento 606</h3>
                         <p>Torre Dream, Las Aguilas</p>
@@ -82,20 +91,20 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <a href="../index.html"><img src="../images/LogoOG.jfif" alt="" style="height: auto; width: 30%;"></a>
+                <a href="./index.html"><img src="./images/LogoOG.jfif" alt="" style="height: auto; width: 30%;"></a>
             </div>
             <div class="footer-links"></div>
                 <div class="footer-column">
-                    <a href="../services/services.html"><h4>Servicios</h4></a>
+                    <a href="./services/services.html"><h4>Servicios</h4></a>
                     <ul>
-                        <li><a href="/properties/properties.html">Compra de Inmuebles</a></li>
-                        <li><a href="/properties/properties.html">Venta de Inmuebles</a></li>
-                        <li><a href="/properties/properties.html">Renta de Inmuebles</a></li>
-                        <li><a href="/services/services.html">Notaria</a></li>
+                        <li><a href="./properties/properties.html">Compra de Inmuebles</a></li>
+                        <li><a href="./properties/properties.html">Venta de Inmuebles</a></li>
+                        <li><a href="./properties/properties.html">Renta de Inmuebles</a></li>
+                        <li><a href="./services/services.html">Notaria</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <a href="../contact/contact.html"><h4>Contacto</h4></a>
+                    <a href="./contact/contact.html"><h4>Contacto</h4></a>
                     <p>dario.rodriguez@moby.com.mx</p>
                     <p>3338067607</p>
                     <p></p>
@@ -106,5 +115,8 @@
             <p>&copy; 2025 MOBY. Todos los derechos reservados.</p>
         </div>
     </footer>
+    
+    <!-- JavaScript -->
+    <script src="./script/main.js"></script>
 </body>
 </html>
