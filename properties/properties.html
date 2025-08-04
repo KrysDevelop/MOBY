@@ -2,27 +2,37 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Estudio de Arquitectura</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="projects.css">
-    <link href="/style/proyectos_style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#00B8C8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Propiedades - MOBY Inmobiliaria</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/proyectos_style.css">
+    <link rel="icon" type="image/x-icon" href="../images/icon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="../images/icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="logo">
-            <img src="../images/LogoOG.jfif" alt="Estudio de Arquitectura Logo" style="height: 10%; width: 10%;">
+            <a href="../index.html"><img src="../images/LogoOG.jfif" alt="MOBY Inmobiliaria" class="logo-img"></a>
         </div>
-        <nav>
-            <ul>
+        <button class="mobile-menu-toggle" aria-label="Menú">
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+        </button>
+        <nav class="main-nav">
+            <ul class="nav-links">
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../team/team.html">Nuestro Equipo</a></li>
-                <li><a href="projects.html" class="active">Proyectos</a></li>
-                <li><a href="../contact/contact.html">Contactanos</a></li>
+                <li><a href="../services/services.html">Servicios</a></li>
+                <li><a href="properties.html" class="active">Propiedades</a></li>
+                <li><a href="../contact/contact.html">Contacto</a></li>
+                <li><a href="../partners/partners.html">Socios</a></li>
             </ul>
         </nav>
     </header>
@@ -232,38 +242,43 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="../images/LogoOG.jfif" alt="Estudio de Arquitectura Logo" style="height: 90%; width: 40%;">
+                <a href="../index.html"><img src="../images/LogoOG.jfif" alt="MOBY Inmobiliaria"></a>
             </div>
+            
             <div class="footer-links">
                 <div class="footer-column">
-                    <h4>Estudio</h4>
+                    <h4><a href="../services/services.html">Servicios</a></h4>
                     <ul>
-                        <li><a href="#">Mision y Vision</a></li>
-                        <li><a href="#">Nuestros Socios</a></li>
-                        <li><a href="#">Historia</a></li>
-                        <li><a href="#">Contáctanos</a></li>
+                        <li><a href="properties.html">Compra de Inmuebles</a></li>
+                        <li><a href="properties.html">Venta de Inmuebles</a></li>
+                        <li><a href="properties.html">Renta de Inmuebles</a></li>
+                        <li><a href="../services/services.html">Notaria</a></li>
                     </ul>
                 </div>
+                
                 <div class="footer-column">
-                    <h4>Servicios</h4>
+                    <h4><a href="../contact/contact.html">Contacto</a></h4>
                     <ul>
-                        <li><a href="#">Construccion</a></li>
-                        <li><a href="#">Compra y Venta de Inmuebles</a></li>
-                        <li><a href="#">Diseño de Interiores</a></li>
-                        <li><a href="#">Notaria</a></li>
+                        <li><a href="mailto:dario.rodriguez@moby.com.mx">dario.rodriguez@moby.com.mx</a></li>
+                        <li><a href="tel:3338067607">33 3806 7607</a></li>
                     </ul>
                 </div>
+                
                 <div class="footer-column">
-                    <h4>Contacto</h4>
-                    <p>inmobiliaria@moby.com.mx</p>
-                    <p>+52 </p>
-                    <p>Direccion</p>
+                    <h4>Síguenos</h4>
+                    <ul class="social-links">
+                        <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+        
         <div class="footer-bottom">
             <p>&copy; 2025 MOBY. Todos los derechos reservados.</p>
         </div>
@@ -295,5 +310,6 @@
             });
         });
     </script>
+    <script src="../script/main.js"></script>
 </body>
 </html>
