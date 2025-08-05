@@ -1,14 +1,38 @@
 // Toggle del menú móvil
 document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.mobile-menu-toggle');
-    const mainNav = document.querySelector('.main-nav');
-    const navLinks = document.querySelectorAll('.nav-links a');
+    console.log('DOM cargado - Iniciando script del menú móvil');
+    
+    // Selectores mejorados para mayor compatibilidad
+    const menuToggle = document.querySelector('.mobile-menu-toggle, [data-menu-toggle]');
+    const mainNav = document.querySelector('.main-nav, [data-main-nav]');
+    const navLinks = document.querySelectorAll('.nav-links a, [data-nav-link]');
+    
+    console.log('Elementos del menú:', { menuToggle, mainNav, navLinks: navLinks.length });
 
     // Función para alternar el menú
     function toggleMenu() {
+        console.log('Alternando menú...');
+        if (!menuToggle || !mainNav) {
+            console.error('No se encontraron los elementos del menú');
+            return;
+        }
+        
         menuToggle.classList.toggle('active');
         mainNav.classList.toggle('active');
         document.body.classList.toggle('menu-open');
+        
+        // Forzar visibilidad para móviles
+        if (mainNav.classList.contains('active')) {
+            mainNav.style.display = 'block';
+            mainNav.style.visibility = 'visible';
+            mainNav.style.opacity = '1';
+            mainNav.style.transform = 'none';
+        }
+        
+        console.log('Estado del menú:', { 
+            isActive: mainNav.classList.contains('active'),
+            computedStyle: window.getComputedStyle(mainNav)
+        });
     }
 
     // Evento de clic en el botón del menú

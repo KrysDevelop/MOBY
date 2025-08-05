@@ -1,0 +1,156 @@
+/* Estilos específicos para el menú móvil en properties.html */
+
+/* Reset y estilos base para móvil */
+*[style*="display: none"] {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
+
+/* Asegurar que el body tenga espacio para el header fijo */
+body {
+    padding-top: 70px !important;
+    overflow-x: hidden !important;
+}
+
+/* Estilos para el header */
+header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 70px !important;
+    z-index: 1000 !important;
+    background-color: white !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+    padding: 0 20px !important;
+}
+
+/* Botón del menú móvil */
+.mobile-menu-toggle {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001 !important;
+    position: relative;
+}
+
+/* Iconos del botón */
+.menu-icon {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+/* Menú desplegable - Forzando visibilidad en móvil */
+.main-nav {
+    position: fixed !important;
+    top: 70px !important;
+    right: -100% !important;
+    width: 100% !important;
+    height: calc(100vh - 70px) !important;
+    background-color: white !important;
+    transition: right 0.3s ease-in-out !important;
+    z-index: 9999 !important; /* Aumentado a 9999 */
+    overflow-y: auto !important;
+    padding: 20px 0 !important;
+    margin: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: none !important;
+    display: block !important;
+}
+
+/* Menú activo */
+.main-nav.active {
+    right: 0 !important;
+}
+
+/* Enlaces del menú */
+.nav-links {
+    flex-direction: column !important;
+    gap: 0 !important;
+    padding: 0 20px !important;
+    margin: 0 !important;
+}
+
+.nav-links li {
+    width: 100% !important;
+    margin: 0 !important;
+    text-align: center !important;
+}
+
+.nav-links a {
+    display: block !important;
+    padding: 15px 0 !important;
+    font-size: 1.1rem !important;
+    width: 100% !important;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Asegurar que el menú esté por encima de otros elementos */
+.logo {
+    z-index: 1001 !important;
+}
+
+/* Estilos para el menú móvil */
+@media (max-width: 768px) {
+    .main-nav {
+        background-color: white !important;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    
+    .nav-links a {
+        color: #2E3A47 !important;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+        color: #00B8C8 !important;
+        background-color: #f8f9fa;
+    }
+}
+
+/* Ajustes para pantallas más grandes */
+@media (min-width: 769px) {
+    .mobile-menu-toggle {
+        display: none !important;
+    }
+    
+    .main-nav {
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        width: auto !important;
+        height: auto !important;
+        background-color: transparent !important;
+        padding: 0 !important;
+        overflow-y: visible !important;
+    }
+    
+    .nav-links {
+        flex-direction: row !important;
+        gap: 2rem !important;
+    }
+    
+    .nav-links li {
+        width: auto !important;
+    }
+    
+    .nav-links a {
+        padding: 0.5rem 0 !important;
+        border-bottom: none !important;
+    }
+}
